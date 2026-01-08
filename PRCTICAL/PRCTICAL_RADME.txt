@@ -1,0 +1,41 @@
+# Smart Library Management System (MySQL)
+
+## Objective
+
+To develop a Smart Library Management System using MySQL that supports:
+- CRUD operations
+- Filtering & sorting
+- Joins & subqueries
+- Aggregations
+- Window functions
+- CASE expressions
+
+--> Database Schema
+
+--> Tables
+
+1. Authors (author_id, name, email)
+2. Books (book_id, title, author_id, category, isbn, published_date, price, available)
+3. Members (member_id, name, email, phone_number, membership_date)
+4. Transactions (transaction_id, member_id, book_id, borrow_date, return_date, fine_amount)
+
+--> Features Implemented
+
+- Book & author management
+- Member registration & tracking
+- Borrow & return transactions
+- Fine calculation
+- Active/Inactive membership status
+- Most borrowed books
+- Category-wise analysis
+
+--> How to Run
+
+1. Open MySQL Workbench
+2. Create a new SQL file
+3. Paste `library_management.sql`
+4. Execute the script
+
+
+CREATE BY 
+Ayush Patel
