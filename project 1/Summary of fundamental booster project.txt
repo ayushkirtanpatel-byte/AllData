@@ -1,0 +1,19 @@
+1. classify student grade .
+
+2. find total and average of student data .
+
+3. find a student count how gates 60mark .
+
+4. find student marks how scord 80 up in maths and science .
+
+5. Perform perform some functions of excel example like a bold italic uppercase lowercase .
+
+6.  Find a product price from id  in sales data .
+
+7. Perform some more functions of Excel like me and Max that's all .
+
+8. Find employee salary from his ID.
+
+9. Find employee training date using and reform from his ID .
+
+10. I am doing my whole best and some functions like dating and etc are not working in my exhaust so that's why  function is not performed here .
