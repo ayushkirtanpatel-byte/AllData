@@ -1,0 +1,23 @@
+1. perform  a date time function and find real time and date.
+
+2. use filter function to return multiple values .
+
+3. use conditional formation and show icon and arrow
+
+4. create a time stamp using now function and find real time .
+
+5. perform what if analysis
+    - scenario management
+    - goal seek
+
+6. find high value customer using if function 
+
+7. create a slicer and timelines .
+
+8. finding most frequent purchased product using index and match function .
+
+9. compare two list like name from columns .
+
+10. create pivot chart .
+
+11. create a dashboard using pivot table and slicer  and timeline .
