@@ -1,0 +1,47 @@
+Project Documentation – Excel Dashboard
+
+1. Data Selection & Import
+
+The raw dataset was imported into the Database sheet.
+The data was arranged properly in table format.
+There were no blank rows or extra columns in the dataset.
+
+2. Data Cleaning & Preparation
+
+The data was checked for missing values.
+All data types were formatted correctly (Number, Date, Text).
+Duplicate records were checked using the formula:
+
+=IF(COUNTIF(range, cell)>1,"Duplicate","Unique")
+
+No duplicate records were found in the dataset.
+
+3. Pivot Table Creation
+
+Pivot Tables were created in the Pivot Table sheet.
+Functions like SUM and COUNT were used for calculations.
+Pivot Tables were connected to the Dashboard for better analysis.
+
+4. Formulas Used
+
+VLOOKUP was used to find and retrieve data.
+INDEX-MATCH was used for flexible lookup.
+IF function was used for logical conditions.
+Nested formulas were applied wherever required.
+
+5. Data Visualization
+
+Charts were created using Pivot Table data.
+Proper chart titles and formatting were applied.
+A summary section was designed to display key results clearly.
+
+6. Interactive Dashboard
+
+Slicers and Timeline were added for filtering the data.
+Slicers were connected with Pivot Tables.
+The Dashboard updates automatically based on user selection.
+
+7. Sheet Organization
+
+Separate sheets were created: Database, Pivot Table, Dashboard, and Statistics.
+Clean and simple formatting was maintained throughout the workbook.
