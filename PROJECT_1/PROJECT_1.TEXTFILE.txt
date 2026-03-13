@@ -1,0 +1,60 @@
+1. Data Extraction
+-> Get Data → Excel Sales_Jan.xlsx, Sales_Feb.xlsx, Sales_Mar.xlsx loading.
+-> Append Queries → Append Queries as New (Jan + Feb + Mar sales data combine)
+-> HTML table from the web (Fake store API)
+-> Load Employee dataset = Containing Employee ID , Name , Department , Region , and Join Date.
+
+2. Basic Transformations
+-> Home → Remove Rows → Remove Blank Rows.
+-> Home → Use First Row as Headers.
+-> Rename columns to meaningful names.
+-> Change Data Type (Order Date → Date , Revenue → Decimal Number , Cost → Decimal Number)
+-> Home → Remove Rows → Remove Duplicates.
+
+3. Text Tools
+-> Customer Name → Transform → UPPERCASE.
+-> Customer Name → Transform → lowercase.
+-> Transform → Format → Trim.
+-> Transform → Format → Clean.
+-> Replace null value to 0.
+-> Address → Extract -> Text Before Delimiter (,).
+
+4. Numeric Tools
+-> Transform → Rounding → Round → 2 decimal.
+-> Add Column → Custom Column (Profit = [Revenue] - [Cost]).
+
+5. Date & Time Tools
+-> Select Order Date -> Add Column -> Date -> Year , Month , Quarter , Day.
+-> Custom Fiscal Month -> Add Column -> Date -> Month.
+-> Add Column → Custom Column Age -> = Date. Year(Date Time. Local Now()) - Date. Year([Birthdate]).
+
+6. Conditional Column & Indexing
+-> Add Column → Conditional Column -> Column Name: Sales Category
+Revenue >= 10000 → High
+Revenue >= 5000 → Medium
+Else → Low
+-> Add Column → Index Column
+From 0
+From 1
+
+7. Pivoting & Unpivoting
+-> Table is not available.
+
+8. Merging & Appending
+-> Home → Merge Queries -> Sales Table and Employees Table -> Match column → Employee ID.
+-> Append Queries → Append Queries as New (Jan + Feb + Mar sales data combine)
+
+9. Grouping & Aggregation
+-> Home → Group By -> Group by → Region
+Total Sales → Sum Revenue
+Avg Order Value → Average Revenue
+Transaction Count → Count Rows
+
+10. Data Profiling & Quality
+-> View tab -> Column Quality,Column Distribution,Column Profile
+
+11. Source Settings & Parameters
+-> Don't using this
+
+12.Refresh Simulation 
+-> Don't using this
