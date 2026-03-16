@@ -1,0 +1,91 @@
+Power BI Project Instructions
+
+1.  Step 1: Import Excel Files (Power Query)
+
+-   Open Power BI Desktop
+-   Go to Home → Get Data → Excel
+-   Import the following files: Sales_Fact.xlsx Customer_Dim.xlsx
+    Product_Dim.xlsx Region_Dim.xlsx Date_Dim.xlsx Returns_Fact.xlsx
+-   Click on Transform Data to open Power Query
+
+2.  Step 2: Data Cleaning
+
+-   Remove blank rows: Home → Remove Rows → Remove Blank Rows
+-   Set Data Types: IDs → Whole Number Quantity → Whole Number Revenue →
+    Currency Discount → Decimal Date → Date Month → Text Year → Whole
+    Number
+-   After cleaning all tables click Close & Apply
+
+3.  Step 3: Create Relationships
+
+Sales_Fact.CustomerID → Customer_Dim.CustomerID (Many to One)
+Sales_Fact.ProductID → Product_Dim.ProductID (Many to One)
+Sales_Fact.RegionID → Region_Dim.RegionID (Many to One)
+Sales_Fact.DateKey → Date_Dim.DateKey (Many to One) Returns_Fact.SalesID
+→ Sales_Fact.SalesID (Many to One) Returns_Fact.ReturnDateKey →
+Date_Dim.DateKey (Inactive)
+
+Cross Filter Direction = Single
+
+4.  Step 4: Star Schema Design
+
+Central Fact Table: Sales_Fact
+
+Customer_Dim | Product_Dim — Sales_Fact — Region_Dim | Date_Dim |
+Returns_Fact
+
+5.Demonstrate Cardinality
+
+     1 : Many(One-to-Many)
+     In a one-to-many relationship, a key value appears once in one table but can appear multiple times in another table.
+     Example: Customer_ Dim → Sales_ Fact
+
+     Many : 1(Many-to-One)
+     In a one-to-many relationship, a key value appears once in one table but can appear multiple times in another table.
+     Example: Sales_ Fact → Product_ Dim
+
+     1 : 1(One-to-One)
+     In a one-to-one relationship, a key value appears only once in both tables.    
+     Example: Sales_ Fact → Returns_ Fact
+
+6.  Step 6: Advanced Model Settings
+
+-   Cross Filter Direction → Single
+-   Avoid bidirectional filters unless necessary
+
+7.  Step 8: Data Formatting
+
+Revenue → Currency Quantity → Whole Number Discount → Percentage Date →
+Date
+
+8.  Step 9: Data Categories
+
+City → City State → State Country → Country ProductName → Product
+
+9. Step 10: Create Hierarchies
+
+Date Hierarchy Year → Quarter → Month → Date
+
+Region Hierarchy Country → State → City
+
+Product Hierarchy Category → Subcategory → ProductName
+
+10. Step 11: Verification (Matrix Visual)
+
+11. Sales by Product Category and Region Rows: Product_Dim[Category]
+    Columns: Region_Dim[Country] Values: SUM(Sales_Fact[Revenue])
+
+12. Return Reasons by Fiscal Year Rows: Returns_Fact[Reason] Columns:
+    Date_Dim[Fiscal Year] Values: COUNT(Returns_Fact[ReturnID])
+
+13. Revenue by Customer Segment Rows: Customer_Dim[Segment] Values:
+    SUM(Sales_Fact[Revenue])
+
+Final Result Requirements
+
+-   Power Query Data Cleaning
+-   Star Schema Data Model
+-   Proper Relationships
+-   Hierarchies
+-   Inactive Relationship Usage
+-   Matrix Table Verification
