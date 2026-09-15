@@ -1,0 +1,30 @@
+{
+  "status": "success",
+  "source": "dummy-economic-api",
+  "data": [
+    {
+      "region": "North",
+      "inflation_rate": 4.93,
+      "unemployment_rate": 3.44,
+      "avg_interest_rate": 11.79
+    },
+    {
+      "region": "South",
+      "inflation_rate": 7.2,
+      "unemployment_rate": 8.56,
+      "avg_interest_rate": 11.89
+    },
+    {
+      "region": "East",
+      "inflation_rate": 4.65,
+      "unemployment_rate": 3.95,
+      "avg_interest_rate": 7.17
+    },
+    {
+      "region": "West",
+      "inflation_rate": 7.12,
+      "unemployment_rate": 7.52,
+      "avg_interest_rate": 10.17
+    }
+  ]
+}
