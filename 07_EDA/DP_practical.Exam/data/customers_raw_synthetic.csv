@@ -1,0 +1,9 @@
+customer_id,name,age,gender,city,income,signup_date,last_purchase_date,education,satisfaction_level,total_purchases,purchased,customer_id_raw
+101,Aarav,24.0,Male,Mumbai,,2024-02-14,2024-05-08,,Medium,20,0,CUST101
+102,Diya,30.0,Female,Delhi,55000.0,2025-01-21,2025-03-04,Bachelor's,Low,23,1,102
+103,Kabir,27.0,Male,Bangalore,,2024-11-23,,Bachelor's,,23,0,CUST103
+104,Meera,35.0,Female,Ahmedabad,60000.0,2024-08-07,2025-09-01,PhD,Medium,6,1,104
+105,Vivaan,121.0,Male,Pune,75000.0,2024-08-04,2025-05-26,Bachelor's,High,11,1,105
+106,Riya,,Female,Chennai,-500.0,2025-03-05,2026-01-04,Master's,Medium,14,0,106
+107,Aryan,29.0,Male,Kolkata,50000.0,2024-02-12,2024-11-26,Bachelor's,High,15,0,107
+108,Isha,33.0,Female,Surat,950000.0,2024-12-14,2025-10-25,High School,High,2,0,CUST108
