@@ -1,10 +1,12 @@
-# Data Analytics & Programming Repositories
+# Data Analytics & Programming Repositories (`AllData` Backup & Central Index)
 
-This root repository serves as an entry point for 7 individual topic repositories covering Python programming, SQL database manipulation, Excel financial and data analysis, Power BI business intelligence dashboards, business case studies, mathematical & statistical modeling, and exploratory data analysis (EDA).
+This `AllData` repository serves as a centralized backup and entry point for 7 individual topic repositories covering Python programming, SQL database manipulation, Excel financial and data analysis, Power BI business intelligence dashboards, business case studies, mathematical & statistical modeling, and exploratory data analysis (EDA).
+
+Each topic folder (`python`, `sql`, `excel`, `powerbi`, `business_case_studies`, `mathematics`, `eda`) functions both as an independent, standalone Git repository (`git init`) and as part of this complete `AllData` backup portfolio.
 
 ---
 
-## Individual Topic Repositories
+## Standalone Topic Repositories
 
 ### `python/`
 Python programming repository focusing on core concepts such as OOP, module design, data structures, control flow, file handling, interactive user inputs, NumPy array manipulation, and Matplotlib/Seaborn visualization utility tools.
@@ -29,9 +31,9 @@ Exploratory Data Analysis repository involving end-to-end data cleaning, preproc
 
 ---
 
-## Repository Summary Table
+## Portfolio Summary Table
 
-| Repository | Topic | Technologies Used | Short Description |
+| Topic Repository | Primary Domain | Technologies Used | Short Description |
 |---|---|---|---|
 | `python/` | Python | Python, NumPy, Pandas, Matplotlib, Seaborn | Modules covering interactive data collection, file journal management, date/time utils, NumPy array ops, OOP wrappers, and plot visualizations. |
 | `sql/` | SQL | MySQL, SQL | Relational database setups, DDL/DML scripts, data transformation functions, and Smart Library Management System queries. |
